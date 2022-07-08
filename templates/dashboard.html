@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href=".\static\styles\css\bulma.min.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', path='/styles/css/bulma.min.css') }}" >
+    <title>FastAPI</title>
+</head>
+<body class="is-success">
+    <h1>Mi primer aplicacion con FastAPI</h1>
+    <hr>
+    <h1>Mi nombre es: {{ name }}</h1>
+    <hr>
+    <h2 class="text-decoration-underline">Return HTML con hoja de estilo y archivos estaticos desde carpetas</h2>
+
+    <section class="section">
+        {% block content %}
+        {% endblock %}
+    </section>
+    
+    <button class="button is-white">White</button>
+    <button class="button is-light">Light</button>
+    <button class="button is-dark">Dark</button>
+    <button class="button is-black">Black</button>
+    <button class="button is-text">Text</button>
+    <button class="button is-ghost">Ghost</button>
+    <div class="container">
+        <div class="notification is-primary">
+          This container is <strong>centered</strong> on desktop and larger viewports.
+        </div>
+    </div>
+ </body>
+</body>
+</html>
